@@ -1,12 +1,22 @@
 import express from "express";
 import cors from "cors";
+import nodemailer from "nodemailer";
 
 export class Server {
   constructor() {
     this.port = process.env.PORT;
-
     this.app = express();
 
+    this.transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASSWORD,
+      },
+    });
+
+    // cargar configuraciones
     this.middlewares();
     this.routes();
   }
@@ -17,9 +27,22 @@ export class Server {
   }
 
   routes() {
-    this.app.get("/", (req, res) => {
+    this.app.post("/sendMail", (req, res) => {
+      const { mail, msg, subject } = req.body;
+
+      const mailOptions = {
+        from: process.env.GMAIL_USER,
+        to: mail,
+        subject: subject,
+        html: msg,
+      };
+
+      this.transporter.sendMail(mailOptions, (err, info) => {
+        console.log({ err, info });
+      });
+
       return res.json({
-        msg: "hola",
+        msg: "mailEnviado",
       });
     });
   }
