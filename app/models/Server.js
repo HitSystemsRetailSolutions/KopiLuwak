@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import nodemailer from "nodemailer";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
 
 export class Server {
   constructor() {
@@ -23,7 +25,10 @@ export class Server {
 
   middlewares() {
     this.app.use(express.json());
-    this.app.use(express.static("public"));
+
+    const __dirname = dirname(fileURLToPath(import.meta.url));
+
+    this.app.use(express.static(__dirname + "/../../public"));
     this.app.use(cors());
   }
 
