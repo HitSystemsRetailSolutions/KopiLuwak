@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
     return res.json(results.recordset);
   }
 
-  const results = await recHit("fac_tena", "select TOP 3 * from dependentes");
+  const results = await recHit("fac_tena", "select TOP 1 * from dependentes");
 
   res.json(results.recordset);
 });
