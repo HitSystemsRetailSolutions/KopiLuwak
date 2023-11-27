@@ -11,7 +11,10 @@ router.get("/", async (req, res) => {
       "fac_tena",
       `select * from dependentes where nom like '%${nombreDependienta}%'`
     );
-    return res.json(results.recordset);
+    return res.json({
+      nombre: nombreDependienta,
+      data: results.recordset,
+    });
   }
 
   const results = await recHit("fac_tena", "select TOP 1 * from dependentes");
