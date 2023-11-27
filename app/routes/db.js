@@ -11,6 +11,9 @@ router.get("/", async (req, res) => {
       "fac_tena",
       `select * from dependentes where nom like '%${nombreDependienta}%'`
     );
+
+    console.log(nombreDependienta);
+
     return res.json({
       nombre: nombreDependienta,
       data: results.recordset,
