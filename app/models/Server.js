@@ -4,6 +4,8 @@ import nodemailer from "nodemailer";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
+import dbRoutes from "../routes/db.js";
+
 export class Server {
   constructor() {
     this.port = process.env.PORT;
@@ -51,6 +53,8 @@ export class Server {
         msg: "mailEnviado",
       });
     });
+
+    this.app.use("/db", dbRoutes);
   }
 
   listen() {
