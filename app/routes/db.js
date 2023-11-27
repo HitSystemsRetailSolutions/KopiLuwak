@@ -4,12 +4,12 @@ import { recHit } from "../db/mssql.js";
 const router = Router();
 
 router.get("/", async (req, res) => {
-  const { name } = req.body;
+  const { nombreDependienta } = req.body;
 
-  if (name) {
+  if (nombreDependienta) {
     const results = await recHit(
       "fac_tena",
-      `select * from dependentes where nom like '%${name}%'`
+      `select * from dependentes where nom like '%${nombreDependienta}%'`
     );
     return res.json(results.recordset);
   }
