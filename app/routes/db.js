@@ -36,11 +36,17 @@ router.get("/", async (req, res) => {
 router.get("/sql", async (req, res) => {
   const { sql } = req.body;
 
-  const results = await recHit("fac_tena", sql);
+  try {
+    const results = await recHit("fac_tena", sql);
 
-  console.log(sql);
+    console.log(sql);
 
-  return res.json(results.recordset);
+    console.log(results.recordset);
+
+    return res.json(results.recordset);
+  } catch (error) {
+    return res.status(400).json(error);
+  }
 });
 
 router.get("/getTurnosDependienta", async (req, res) => {
