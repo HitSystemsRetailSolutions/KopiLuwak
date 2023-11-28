@@ -34,7 +34,7 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/sql", async (req, res) => {
-  const { sql } = req.params;
+  const { sql } = req.body;
 
   try {
     const results = await recHit("fac_tena", sql);
