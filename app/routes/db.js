@@ -4,6 +4,18 @@ import { recHit } from "../db/mssql.js";
 const router = Router();
 
 router.get("/", async (req, res) => {
+  const campos = ["nombreDependienta", "nombreTienda", "fecha"];
+  let contador = 0;
+  for (let campo of campos) {
+    if (req.query[campo]) contador++;
+  }
+
+  if (contador === 0) {
+    return res.status(400).json({
+      msg: "Tienes que enviar parametros",
+    });
+  }
+
   const { nombreDependienta } = req.body;
 
   if (nombreDependienta) {
@@ -19,8 +31,12 @@ router.get("/", async (req, res) => {
       data: results.recordset,
     });
   }
+});
 
-  const results = await recHit("fac_tena", "select TOP 1 * from dependentes");
+router.get("/sql", async (req, res) => {
+  const { sql } = req.body;
+
+  const results = await recHit("fac_tena", sql);
 
   res.json(results.recordset);
 });
