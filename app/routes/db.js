@@ -33,15 +33,12 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/sql", async (req, res) => {
+router.post("/sql", async (req, res) => {
   const { sql } = req.body;
 
   try {
+    console.log({ sql, fecha: Date.now() });
     const results = await recHit("fac_tena", sql);
-
-    console.log(sql);
-
-    console.log(results.recordset);
 
     return res.json(results.recordset);
   } catch (error) {
