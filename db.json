@@ -1,0 +1,202 @@
+[
+  {
+    "ref": "275f34e3-22f9-494f-bb71-0c3cd8b667cd",
+    "keyword": "b538167666870b15d9a186596a653b84",
+    "answer": "Una pizza margarita grande",
+    "options": {},
+    "from": "34627582130",
+    "refSerialize": "2b87626f553699f2f8b248aa5fe6ba80"
+  },
+  {
+    "ref": "ans_e6481a3b-269f-477d-b063-6b3c66de465e",
+    "keyword": "key_f4543d3b-57cf-4363-8784-a1dac7d3e092",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "29c05b37a48c76ba40c4710f1d2468e6",
+    "from": "34627582130"
+  },
+  {
+    "ref": "ee2af61a-160f-42b6-ba91-353a59616456",
+    "keyword": null,
+    "answer": "Direccion Erronea. Por favor, dime tu direccion para completar el pedido.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "34627582130",
+    "refSerialize": "1181103c07446cb9a7b20371e7129ead"
+  },
+  {
+    "ref": "331249f5-0828-4633-88e8-f4fcc041432e",
+    "keyword": "29c05b37a48c76ba40c4710f1d2468e6",
+    "answer": "Avinguda Francesc Macià 30",
+    "options": {},
+    "from": "34627582130",
+    "refSerialize": "4e67b2650b293a28a68e247af9ab699e"
+  },
+  {
+    "ref": "ans_e6481a3b-269f-477d-b063-6b3c66de465e",
+    "keyword": "key_f4543d3b-57cf-4363-8784-a1dac7d3e092",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "29c05b37a48c76ba40c4710f1d2468e6",
+    "from": "34627582130"
+  },
+  {
+    "ref": "99868fb4-2a6a-4a0a-b398-94ea9e1b271d",
+    "keyword": null,
+    "answer": "Gràcies per la teva adreça. Però em podríes dir el codi postal?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "34627582130",
+    "refSerialize": "6f1291bc32dd54544cc544bd8cf15db6"
+  },
+  {
+    "ref": "9a97ed07-f899-4e2f-8e05-2ff724858e89",
+    "keyword": "29c05b37a48c76ba40c4710f1d2468e6",
+    "answer": "08320",
+    "options": {},
+    "from": "34627582130",
+    "refSerialize": "fc15582b41fc1a767b1a4f3af9bd869b"
+  },
+  {
+    "ref": "ans_e6481a3b-269f-477d-b063-6b3c66de465e",
+    "keyword": "key_f4543d3b-57cf-4363-8784-a1dac7d3e092",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "29c05b37a48c76ba40c4710f1d2468e6",
+    "from": "34627582130"
+  },
+  {
+    "ref": "06740094-83a8-4229-8875-3e3683b68844",
+    "keyword": null,
+    "answer": "Confirmación de impresión del ticket. Pedido recibido, tardara 30 minutos aproximadamente",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "34627582130",
+    "refSerialize": "6ea67d24bcf9b1c2b629e5adbfe57d90"
+  },
+  {
+    "ref": "8f3ce057-84fb-467f-87c9-4435d8d0289e",
+    "keyword": "29c05b37a48c76ba40c4710f1d2468e6",
+    "answer": "Una pizza margarita grande",
+    "options": {},
+    "from": "34627582130",
+    "refSerialize": "2b87626f553699f2f8b248aa5fe6ba80"
+  },
+  {
+    "ref": "ans_e6481a3b-269f-477d-b063-6b3c66de465e",
+    "keyword": "key_f4543d3b-57cf-4363-8784-a1dac7d3e092",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "29c05b37a48c76ba40c4710f1d2468e6",
+    "from": "34627582130"
+  },
+  {
+    "ref": "b524388d-e786-4b94-8a18-aa98d4f7a097",
+    "keyword": null,
+    "answer": "¿Deseas algún complemento como patatas, bebidas o alguna otra pizza?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "34627582130",
+    "refSerialize": "83192b5a76a8207f3fdf395bddfdf411"
+  },
+  {
+    "ref": "12f3027d-a2ef-4733-8935-8210c6dc63e3",
+    "keyword": "29c05b37a48c76ba40c4710f1d2468e6",
+    "answer": "No",
+    "options": {},
+    "from": "34627582130",
+    "refSerialize": "8e18a7e92a2a646d2d79e385a3a290d6"
+  },
+  {
+    "ref": "ans_e6481a3b-269f-477d-b063-6b3c66de465e",
+    "keyword": "key_f4543d3b-57cf-4363-8784-a1dac7d3e092",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "29c05b37a48c76ba40c4710f1d2468e6",
+    "from": "34627582130"
+  },
+  {
+    "ref": "d7b12d7c-212b-4f97-a458-7de0986a6f81",
+    "keyword": null,
+    "answer": "Perfecto, el total de tu pedido es de 19.00€. ¿Cuál es tu nombre y dirección para el envío?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "34627582130",
+    "refSerialize": "840e92a1abc75b0b7e8004eefef1ae7d"
+  }
+]

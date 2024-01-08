@@ -1,11 +1,12 @@
-import sql from "mssql";
+const sql = require("mssql");
+
 let pool = undefined;
 
 async function PoolCreation() {
   const config = {
-    user: process.env.MSSQL_USER,
-    password: process.env.MSSQL_PASSWORD,
-    server: process.env.MSSQL_SERVER,
+    user: process.env.USER_SERVER,
+    password: process.env.PASSWORD_SERVER,
+    server: process.env.URL_SERVER,
     database: "hit",
     options: {
       encrypt: false,
@@ -18,11 +19,10 @@ async function PoolCreation() {
     },
     requestTimeout: 10000,
   };
-
   pool = await new sql.ConnectionPool(config).connect();
 }
 
-export async function recHit(d = "", csql = "") {
+async function recHit(d = "", csql = "") {
   if (!pool) await PoolCreation();
   const c = `use ${d}; 
   ${csql}`;
@@ -30,3 +30,7 @@ export async function recHit(d = "", csql = "") {
 
   return r;
 }
+
+module.exports = {
+  recHit,
+};
